@@ -6,7 +6,7 @@ var req = new Request(url);
 
 fetch(req)
   .then(function(response) {
-    //return response.json(); // Return the JSON Promise
+    return response.json(); // Return the JSON Promise
   })
   .then(function(data) {
     console.log(data); // Access the data in the resolved Promise
